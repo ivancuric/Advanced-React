@@ -4,7 +4,12 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  extends: ['eslint:recommended', 'prettier', 'prettier/react'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'prettier',
+    'prettier/react',
+  ],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
@@ -13,5 +18,5 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['prettier'],
+  plugins: ['react', 'prettier'],
 };
